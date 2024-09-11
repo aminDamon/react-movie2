@@ -1,0 +1,93 @@
+.release_movie {
+    padding: 0 10%;
+}
+
+.release_movie h1 {
+    padding-bottom: 30px;
+}
+
+.release img {
+    width: 18vw;
+    height: 25vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.rel_slider .caption {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18vw;
+}
+
+.rel_slider .caption h2 {
+    width: 65%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    font-size: 1.3vw;
+    cursor: pointer;
+}
+
+.rel_slider .caption .rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 52%;
+    position: relative;
+}
+
+.rel_slider .caption .rate .hd {
+    width: 25%;
+    background-color: #ff0000;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 700;
+    padding: 3px 0 5px 0;
+}
+
+.rel_slider .caption .rate .time {
+    width: 70%;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.2vw;
+    padding: 3px 0 5px 0;
+}
+
+
+
+.rel_swiper_mobile {
+    display: none;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 980px) {
+    .release_movie {
+        padding: 0;
+    }
+    .rel_swiper {
+        display: none;
+    }
+    .rel_swiper_mobile {
+        display: block;
+    }
+    .release img {
+        width: 42vw;
+        height: 45vw;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .rel_slider .caption h2 {
+        font-size: 3.5vw;
+    }
+    .rel_slider .caption .rate .hd , .rel_slider .caption .rate .time {
+        font-size: 2.5vw;
+        padding: 5px 0;
+    }
+    .rel_slider .caption {
+        width: 43vw;
+    }
+}

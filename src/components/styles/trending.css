@@ -1,0 +1,104 @@
+.trending {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.trending_img {
+    width: 25vw;
+    height: 18.5vw;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trending_img img {
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+}
+
+.padding_all {
+    padding: 0 10%;
+}
+
+.trending_img .info {
+    position: absolute;
+    padding: 0 4%;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trend .caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.trend .caption h2 {
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.trend .caption .genre_tag {
+    display: flex;
+}
+
+.trend .caption .genre {
+    position: relative;
+    width: 6vw;
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: 10px;
+    padding: 8px 10px;
+    margin: 0 3px;
+    font-weight: bold;
+    font-size: 1vw;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 980px) {
+    .padding_all {
+        padding: 0;
+    }
+    .trending_img {
+        width: 32vw;
+        height: 25vw;
+    }
+    .trending_img img {
+        width: 7vw;
+        height: 7vw;
+    }
+    .trending_img .info .two {
+        display: none;
+    }
+    .trend .caption h2 {
+        font-size: 2vw;
+    }
+    .trend .caption .genre {
+        margin: 0;
+    }
+    .trend .caption .genre:last-child {
+        display: none;
+    }
+    .trend .caption .genre {
+        font-size: 1.5vw;
+        width: 12vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .trend .caption .genre {
+        font-size: 2vw;
+    }
+    .trend .caption h2 {
+        font-size: 3vw;
+    }
+}

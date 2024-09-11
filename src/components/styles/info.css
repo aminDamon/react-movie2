@@ -1,0 +1,113 @@
+.information {
+    padding: 0 10%;
+}
+
+.information .info {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.information .info img {
+    width: 25vw;
+    height: 40vw;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.information .info .right {
+    width: 52vw;
+    font-size: 1.2vw;
+    margin-top: -7%;
+}
+
+.information .info .right .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.information .info .right .rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.information .info .right .rate .genre_parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+.information .info .right .rate .space {
+    width: 0.8vw;
+}
+
+.information .info .right .rate .genre {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.1vw;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+}
+
+.information .info .right .favorite {
+    position: relative;
+    background-color: #ff0000;
+    border-radius: 10px;
+    padding: 7px 20px 14px 20px;
+    font-size: 1.1vw;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.information .info .right .favorite span {
+    font-size: 2vw;
+}
+
+.information .info .right .cast {
+    width: 75%;
+    /* font-size: 1.5vw; */
+    position: relative;
+}
+
+@media only screen and (max-width: 980px) {
+    .information .info .right {
+        font-size: 1.3vw;
+    }
+
+    .information .info img {
+        width: 35vw;
+        height: 45vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .information {
+        padding: 0;
+    }
+
+    .information .info {
+        margin: 0;
+    }
+
+    .information .info .right .favorite , .information .info .right .rate .genre {
+        padding: 8px 15px;
+    }
+
+    .information .info .right {
+        width: 60%;
+        font-size: 1.5vw;
+    }
+
+    .information .info .right .rate {
+        width: 80%;
+    }
+}

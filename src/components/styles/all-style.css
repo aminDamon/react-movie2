@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.padding_top {
+    padding-top: 65px;
+}
+
+.h1_body {
+    font-size: 2.1vw;
+}
+
+.error h1 , .error h2 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+    .h1_body {
+        font-size: 4vw;
+    }
+    .padding_top {
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .h1_body {
+        font-size: 6vw;
+    }
+    .padding_top {
+        padding-top: 40px;
+    }
+}
